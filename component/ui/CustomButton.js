@@ -23,7 +23,6 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderRadius: 6,
     backgroundColor: 'white',
-    width: '100%',
     padding: 6,
     margin: 12,
   },
