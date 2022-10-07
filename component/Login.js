@@ -1,15 +1,17 @@
 import React from 'react';
 import {StyleSheet, Text, TextInput, View} from 'react-native';
+import CustomButton from './ui/CustomButton';
 
 function Login() {
   return (
     <View style={styles.crewContainer}>
-      <Text style={styles.label}>Crew</Text>
+      <Text style={styles.label}>Nakama</Text>
       <TextInput
         style={styles.input}
-        placeholder="Crew Name"
+        placeholder="Name"
         placeholderTextColor="white"
       />
+      <CustomButton>Join Crew</CustomButton>
     </View>
   );
 }
@@ -26,7 +28,6 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 30,
     fontWeight: 'bold',
-    // backgroundColor: 'white',
   },
   input: {
     padding: 8,
