@@ -1,11 +1,11 @@
 import React from 'react'
-import { ImageBackground, Text, View } from 'react-native'
+import { ImageBackground, StyleSheet, Text, View } from 'react-native'
 
 function Home() {
-  return <View>
+  return <View style={styles.root}>
     <ImageBackground
   imageStyle={styles.image}
-  style={styles.root}
+  style={styles.rootContainer}
   source={
     // uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUkZBcBSkjGkk_L64s_ki8F23wVRlEwU7zMQ&usqp=CAU',
     require('../assets/images/red.jpg')
@@ -19,7 +19,10 @@ function Home() {
 export default Home
 
 const styles = StyleSheet.create({
-    root: {
+    root:{
+        flex:1,
+    },
+    rootContainer: {
       flex: 1,
     },
     image: {

@@ -1,10 +1,11 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, TextInput, View} from 'react-native';
 
 function Login() {
   return (
     <View>
-      <Text style={styles.text}>Home Screen</Text>
+      <Text style={styles.label}>Crew</Text>
+      <TextInput placeholder="Crew Name" />
     </View>
   );
 }
@@ -12,7 +13,7 @@ function Login() {
 export default Login;
 
 const styles = StyleSheet.create({
-  text: {
+  label: {
     textAlign: 'center',
     color: 'white',
     fontSize: 18,
