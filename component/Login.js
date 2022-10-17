@@ -10,6 +10,18 @@ function Login() {
         style={styles.input}
         placeholder="Name"
         placeholderTextColor="white"
+        cursorColor={'white'}
+        // selectTextOnFocus
+        textAlign="center"
+      />
+      <Text style={styles.label}>Passcode</Text>
+      <TextInput
+        style={styles.input}
+        placeholder="Passcode"
+        placeholderTextColor="white"
+        cursorColor={'white'}
+        maxLength={8}
+        keyboardType="decimal-pad"
       />
       <CustomButton>Join Crew</CustomButton>
     </View>
@@ -36,5 +48,6 @@ const styles = StyleSheet.create({
     borderRadius: 6,
     margin: 10,
     color: 'white',
+    fontSize: 16,
   },
 });
