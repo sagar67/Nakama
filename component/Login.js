@@ -14,10 +14,10 @@ function Login() {
         // selectTextOnFocus
         textAlign="center"
       />
-      <Text style={styles.label}>Passcode</Text>
+      <Text style={styles.label}>Crewmen</Text>
       <TextInput
         style={styles.input}
-        placeholder="Passcode"
+        placeholder="NameCalling"
         placeholderTextColor="white"
         cursorColor={'white'}
         maxLength={8}
